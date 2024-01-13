@@ -1,0 +1,7 @@
+# remove .template from file name
+# add proper entries for the following keys without space between =
+
+# server_name=<db server name>
+# user_name=<db user name>
+# password=<password>
+# db_name=<dbname>

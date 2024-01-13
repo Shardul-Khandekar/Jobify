@@ -1,0 +1,14 @@
+on: push
+name: Python Style Checker
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Flake8 check action
+        uses: tonybajan/flake8-check-action@v1.2.0
+        with:
+          repotoken: ${{ secrets.GITHUB_TOKEN }}
+          ignore: E501,E402,E722
+
+      
